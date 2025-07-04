@@ -6,7 +6,7 @@
    "scripts": {
     "dev": "vite",
     "build": "npx vite build",
-    "preinstall": "npm install vite@5.2.0 --save-exact --no-audit",
+    "preinstall": "npm install vite@5.2.0 --save-exact --no-audit --ignore-scripts",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview --port 10000"
