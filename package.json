@@ -9,7 +9,7 @@
   "lint": "eslint .",
   "preview": "vite preview",
   "start": "vite preview --port 10000",
-  "render-build": "npm install --legacy-peer-deps && npm run build"
+  "render-build": "npm install --legacy-peer-deps --include=dev && npm run build"
 },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
