@@ -5,11 +5,15 @@
   "type": "module",
    "scripts": {
     "dev": "vite",
-    "build": "node --no-warnings ./node_modules/vite/bin/vite.js build",
+    "build": "npx vite build",
+    "preinstall": "npm install vite@5.2.0 --save-exact --no-audit",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite preview --port 10000"
   },
+  "resolutions": {
+  "vite": "5.2.0"  
+},
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@react-three/drei": "^9.102.3",
@@ -32,7 +36,7 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
-    "vite": "^5.4.2"
+    "vite": "^5.2.0"
   },
   "engines": {
   "node": "20.12.2"
