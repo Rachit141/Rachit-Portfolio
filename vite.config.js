@@ -6,10 +6,18 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 10000,
-    strictPort: true, // Ensures Render won't try other ports
+    strictPort: true,
+    // Add this:
+    allowedHosts: [
+      'rachit-portfolio-rpy1.onrender.com'
+    ]
   },
   preview: {
     port: 10000,
     strictPort: true,
+    // Add this too for preview mode:
+    allowedHosts: [
+      'rachit-portfolio-rpy1.onrender.com',
+    ]
   }
 })
