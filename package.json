@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+  "render-build": "npm install --legacy-peer-deps && npm run build",
   "dev": "vite",
-  "build": "vite build",
+  "build": "npx vite build",
   "lint": "eslint .",
   "preview": "vite preview",
-  "start": "vite preview --port 10000",
-  "render-build": "npm install --legacy-peer-deps --production=false && npm run build"
+  "start": "vite preview --port 10000"
 },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
