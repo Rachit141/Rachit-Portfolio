@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-  "render-build": "npm install --legacy-peer-deps --production=false && npm run build",
-  "dev": "vite",
-  "build": "npx vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "start": "vite preview --port 10000"
-},
+    "render-build": "npm install -g vite && npm install --legacy-peer-deps --production=false && npm run build",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "vite preview --port 10000"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@react-three/drei": "^9.102.3",
